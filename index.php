@@ -260,7 +260,7 @@ if(!empty($_POST)){
                                         </a>
                                         <div class="p-slider__body">
                                             <a href="https://oketmonster.herokuapp.com/" class="p-slider__name" target="_blank" rel="noopener">ポートフォリオ</a>
-                                            <a href="https://github.com/tsuyoshisannn/-oketmonster" class="p-slider__link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                                            <a href="https://github.com/tsuyoshisannn/my-poltfolio" class="p-slider__link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                                             <p><span class="p-slider__sub-name">内容</span><br>
                                                 自分のポートフォリオサイト</p>
                                             <p><span class="p-slider__sub-name">機能</span><br>
