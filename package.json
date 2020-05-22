@@ -1,0 +1,22 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "MIT",
+  "devDpendencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

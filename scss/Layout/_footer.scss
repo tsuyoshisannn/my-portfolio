@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.l-footer{
+    padding: 0 $space_xl;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: $font-color_default;
+    color: $font-color_sub1;
+    text-align: center;
+    br {
+        display: none;
+        @include mq(){
+            display: block;
+        }
+    }
+}
