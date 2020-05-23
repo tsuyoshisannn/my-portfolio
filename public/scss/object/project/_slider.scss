@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+.p-slider{
+    margin: 0 auto;
+    width: 100%;
+    @include mq(md){
+        width: 90%;
+    }
+    &__container{
+        position: relative;
+        flex-flow: row nowrap;
+    }
+    &__item{
+        width: 100%;
+    }
+    &__img{
+        transition: all .3s;
+        &:hover{
+            opacity: .8;
+        }
+    }
+    &__body{
+        padding: $space_xl;
+        background-color: $color_bg_sub1;
+        text-align: left;
+        max-height: 300px;
+        min-height: 300px;
+        @include mq(md){
+            padding: $space_l;
+        }
+        p{
+            padding-bottom: $space_m;
+            font-size: $font-size_s;
+            &:first-of-type{
+                margin-top: $space_m;
+            }
+        }
+    }
+    &__name{
+        display: inline-block;
+        margin-right: $space_xl;
+        font-size: $font-size_l;
+        font-weight: 700;
+        @include mq(md){
+            font-size: $font-size_m;
+        }
+    }
+    &__link{
+        display: inline-block;
+        font-size: $font-size_xl;
+    }
+    &__sub-name{
+        font-size: $font-size_default;
+    }
+}
+
+// slick
+
+.slide-arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: $font-size_xl;
+    @include mq(md){
+        top: inherit;
+        bottom: -60px;
+    }
+}
+.prev-arrow{
+    left: 0px;
+    @include mq(md){
+        left: 15px;
+    }
+}
+.next-arrow{
+    right: 0px;
+    @include mq(md){
+        right: 15px;
+    }
+}
