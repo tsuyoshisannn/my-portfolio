@@ -13,10 +13,21 @@
     "nodemon": "^2.0.3"
   },
   "dependencies": {
+    "firebase": "^7.14.5",
+    "firebase-tools": "^8.4.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
     "gulp-imagemin": "^7.1.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyoshisannn/my-poltfolio.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/tsuyoshisannn/my-poltfolio/issues"
+  },
+  "homepage": "https://github.com/tsuyoshisannn/my-poltfolio#readme",
   "description": ""
 }
