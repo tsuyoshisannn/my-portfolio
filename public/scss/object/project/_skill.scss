@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.p-skill{
+    &__group{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        @include mq(lg){
+            flex-wrap: wrap;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    &__card{
+        margin-right: $space_xl;
+        margin-bottom: $space_xxl;
+        width: calc(33.3% - #{$space_3l});
+        background-color: white;
+        border-radius: 4px;
+        &:nth-child(3n){
+            margin-right: 0;
+        }
+        &--padding{
+            padding: $space_xl $space_3l;
+            @include mq(md){
+                padding: $space_l $space_xl;
+            }
+        }
+        @include mq(md){
+            margin-right: $font-size_m;
+            width: calc(30% - #{$space_4l});
+            font-size: $font-size_s;
+            
+        }
+        @include mq(sm){
+            width: 100%;
+            margin-right: 0;
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+        }
+    }
+    &__head{
+        margin-bottom: $space_3l;
+        font-size: $font-size_xl;
+        font-weight: 700;
+        @include mq(md){
+            font-size: $font-size_default;
+        }
+    }
+    &__body{
+        margin-bottom: $space_3l;
+        @include mq(md){
+            font-size: $font-size_m;
+        }
+    }
+    &__item{
+        margin-bottom: $font-size_xl;
+        align-items: center;
+        display: flex;
+    }
+    &__logo{
+        flex-basis: 30%;
+        width: 100%;
+        font-size: 38px;
+        align-items: center;
+        img{
+            width: 60%;
+            vertical-align: middle;
+        }
+    }
+    &__name{
+        text-align: center;
+        flex-grow: 1;
+        font-weight: 700;
+    }
+    &__foot{
+        text-align: left;
+        font-size: $font-size_m;
+    }
+}
