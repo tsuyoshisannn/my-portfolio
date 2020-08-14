@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.u-mb-xxl{
+    margin-bottom: $space_xxl;
+}
+
+.u-mxl{
+    margin: 0 40px;
+    @include mq(md){
+        margin: 0 20px;
+    }
+} 

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// ボタンのCSS
+.c-scroll-to-top {
+    color: $color_corp;
+    font-size: $font-size_4l;
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+    text-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    &:hover{
+      transform: translateY(-3px);
+      transition: .3s;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+  }

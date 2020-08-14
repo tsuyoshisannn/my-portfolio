@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.u-color-bg{
+    background-color: $color_bg;
+}
+
+.u-color-w{
+    color: $font-color_sub1;
+}
+
+.u-color-bg-w{
+    background-color: $color_bg_sub1;
+    box-shadow: 0px 0px 8px 8px rgb(199, 194, 194) inset;
+}

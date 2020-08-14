@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.p-hero{
+    justify-content: center;
+    height: 730px;
+    text-align: center;
+    @include mq(md){
+        height: 700px;
+    }
+    &::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 730px;
+    z-index: -1;
+    background-image: url(../dist/img/portforio-hero_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #333;
+    @include mq(md){
+        background-size: cover;
+    }
+    }
+
+    &__title{
+        color: $font-color_sub1;
+        font-family: $font-family_corp;
+        letter-spacing: 0.5em;
+        font-weight: 700;
+        font-size: $font-size_4l;
+        margin: auto;
+        @include mq(sm){
+            font-size: $font-size_xl;
+        }
+    }
+    br{
+        display: none;
+        @include mq(){
+            display: block
+        }
+    }
+}

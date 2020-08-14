@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+.p-profile{
+    &__group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+    text-align: left;
+    @include mq(md){
+        flex-direction: column;
+        text-align: inherit;
+        }
+    }
+    &__img{
+        margin: 0 $font-size_l;
+        padding: $font-size_xl;
+        width: 30%;
+        overflow: hidden;
+        @include mq(md){
+            margin-bottom: $space_l;
+            padding: 0;
+            width: 30%;
+        }
+        img{
+            box-shadow: 15px 15px 15px -10px;
+            transition: all .3s;
+        }
+        img:hover{
+            cursor: pointer;
+            transform: scale(1.2) rotate(2deg);
+        }
+    }
+    &__img--details{
+        margin: 0 $font-size_l;
+        padding: $font-size_xl;
+        width: 30%;
+        overflow: hidden;
+        @include mq(md){
+            margin-bottom: $space_l;
+            padding: 0;
+            width: 30%;
+        }
+        img{
+            box-shadow: 15px 15px 15px -10px;
+            border-radius: 5px;
+    }
+}
+    &__introduction{
+        padding: 0 $space_xl;
+        width: 70%;
+        line-height: 1.5;
+        @include mq(md){
+            width: 90%;
+        }
+    }
+    &__name{
+        font-size: $font-size_xxl;
+        font-weight: 700;
+        margin-bottom: 15px;
+        @include mq(md){
+            font-size: $font-size_xxl;
+        }
+        @include mq(sm){
+            font-size: $font-size_l;
+        }
+    }
+    &__item{
+        &:first-of-type{
+            margin-bottom: $space_xl;
+            font-weight: 700;
+        }
+        @include mq(md){
+            &:last-child{
+                text-align: left;
+            }
+        }
+    }
+    &__comment--title{
+        font-size: $font-size_l;
+        margin: $space_l 0;
+        font-weight: 700;
+    }
+}
