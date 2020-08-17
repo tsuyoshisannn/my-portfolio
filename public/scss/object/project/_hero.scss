@@ -19,7 +19,7 @@
     background-image: url(../dist/img/portforio-hero_img.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-color: #333;
     @include mq(md){
         background-size: cover;

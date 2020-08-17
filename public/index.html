@@ -209,11 +209,11 @@
                             <!-- スライダー３枚目 -->
                             <div class="p-slider__item">
                                     <div class="u-mxl">
-                                        <a href="https://my-poltfolio.firebaseapp.com/" class="p-slider__img" target="_blank" rel="noopener">
+                                        <a href="https://my-portfolio-a7e18.firebaseapp.com/" class="p-slider__img" target="_blank" rel="noopener">
                                             <img src="./dist/img/my-portfolio-img.png" alt="ポートフォリオのイメージ">
                                         </a>
                                         <div class="p-slider__body">
-                                            <a href="https://my-poltfolio.firebaseapp.com/" class="p-slider__name" target="_blank" rel="noopener">ポートフォリオ</a>
+                                            <a href="https://my-portfolio-a7e18.firebaseapp.com/" class="p-slider__name" target="_blank" rel="noopener">ポートフォリオ</a>
                                             <a href="https://github.com/tsuyoshisannn/my-poltfolio" class="p-slider__link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                                             <p><span class="p-slider__sub-name">内容</span><br>
                                                 自分のポートフォリオサイト</p>
@@ -264,6 +264,31 @@
 <script src="./js/app.js" defer></script>
 
 
+<!-- firebase -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA3-OoG6iRA4S--IOlKuLgO6-7HnWtcdlY",
+    authDomain: "my-portfolio-a7e18.firebaseapp.com",
+    databaseURL: "https://my-portfolio-a7e18.firebaseio.com",
+    projectId: "my-portfolio-a7e18",
+    storageBucket: "my-portfolio-a7e18.appspot.com",
+    messagingSenderId: "1029349732525",
+    appId: "1:1029349732525:web:dd40c9b669b95870fe1624",
+    measurementId: "G-7WDELRRT64"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 
     </body>
 </html>
